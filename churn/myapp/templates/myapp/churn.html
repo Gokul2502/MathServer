@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>WEB EXERCISE 3</title>
+    </head>
+    <body>
+        <h1 align="center">CHURN RATE CALCULATING</h1>
+        <h2 align="center">GOKUL K</h2>
+        <h3 align="center">26017366</h3>
+            <form method="POST">
+                {%csrf_token%}
+            <label>Customer lost:</label>
+        <input type="number" name="customer_lost" value="{{cl}}">
+            <br></br>
+            <label>Initial customer:</label>
+        <input type="number" name="initial_customer" value="{{ic}}">
+            <br></br>
+        <input type="submit" value="calculate">
+            <br></br>
+            <label>Churn rate:</label>
+        <input type="number" value="{{rate}}">
+            </form>
+    </body>
+</html>
